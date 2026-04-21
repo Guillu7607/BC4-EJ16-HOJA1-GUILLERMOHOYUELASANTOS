@@ -9,7 +9,6 @@ public class Main {
         try (Connection conn = DriverManager.getConnection(URL, USER, PASS)) {
             System.out.println("Conexión exitosa a Oracle.");
 
-            // CORRECCIÓN: Pasa el nombre del departamento como un String
             ejecutar(conn, "VENTAS");
 
         } catch (SQLException e) {
